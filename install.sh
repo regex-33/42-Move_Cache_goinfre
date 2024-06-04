@@ -4,22 +4,22 @@
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
-if [ "$1" == "--classter" ]; then
+if [ "$1" == "--cluster" ]; then
     if [ "$2" == "mac" ]; then
-        classter="mac"
+        cluster="mac"
     elif [ "$2" == "dell" ]; then
-        classter="dell"
+        cluster="dell"
     else
-        echo "Invalid argument. Usage: $0 --classter [mac|dell]"
+        echo "Invalid argument. Usage: $0 --cluster [mac|dell]"
         exit 1
     fi
 else
-    echo "Usage: $0 --classter [mac|dell]"
+    echo "Usage: $0 --cluster [mac|dell]"
     exit 1
 fi
 
-if [ -z "$classter" ]; then
-    echo "Class argument is missing. Usage: $0 --classter [mac|dell]"
+if [ -z "$cluster" ]; then
+    echo "Class argument is missing. Usage: $0 --cluster [mac|dell]"
     exit 1
 fi
 
@@ -34,7 +34,7 @@ echo "- Setting up Terminal to open automatically"
 cat > "$AUTOSTART_DIR/terminal.desktop" << EOF
 [Desktop Entry]
 Type=Application
-Exec=gnome-terminal --title="Move Cache" -- bash -c "\$HOME/42-move_cache.sh --classter $classter ; exec bash"
+Exec=gnome-terminal --title="Move Cache" -- bash -c "\$HOME/42-move_cache.sh --cluster $cluster ; exec bash"
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true

@@ -6,17 +6,17 @@ NC='\033[0m' # No Color
 
 
 # Parse arguments
-if [ "$1" == "--classter" ]; then
+if [ "$1" == "--cluster" ]; then
     if [ "$2" == "mac" ]; then
         goinfre_dir="$HOME/goinfre/Apps"
     elif [ "$2" == "dell" ]; then
         goinfre_dir="$HOME/../../sgoinfre/goinfre/Perso/$USER/Apps"
     else
-        echo "Invalid argument. Usage: $0 --classter [mac|dell]"
+        echo "Invalid argument. Usage: $0 --cluster [mac|dell]"
         exit 1
     fi
 else
-    echo "Usage: $0 --classter [mac|dell]"
+    echo "Usage: $0 --cluster [mac|dell]"
     exit 1
 fi
 

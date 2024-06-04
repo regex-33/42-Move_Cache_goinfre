@@ -25,6 +25,8 @@ fi
 
 curl -fsSL https://github.com/regex-33/42-Move_Cache_goinfre/blob/main/move_cache.sh > "$HOME/42-move_cache.sh"
 
+chmod +x "$HOME/42-move_cache.sh"
+
 AUTOSTART_DIR="$HOME/.config/autostart/"
 mkdir -p "$AUTOSTART_DIR"
 

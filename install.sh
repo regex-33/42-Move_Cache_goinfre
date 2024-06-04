@@ -23,7 +23,7 @@ if [ -z "$classter" ]; then
     exit 1
 fi
 
-https://raw.githubusercontent.com/regex-33/42-Move_Cache_goinfre/main/move_cache.sh > "$HOME/42-move_cache.sh"
+curl -sSL https://raw.githubusercontent.com/regex-33/42-Move_Cache_goinfre/main/move_cache.sh > "$HOME/42-move_cache.sh"
 
 chmod +x "$HOME/42-move_cache.sh"
 

@@ -13,6 +13,8 @@ Run the `install.sh` script with the `--classter` argument followed by either `m
 
 ```bash
 ./install.sh --classter mac
+```
+
 This will download the 42-move_cache.sh script, set up a desktop entry to run it automatically on login, and move cache directories to the designated goinfre directory.
 
 Usage
@@ -20,9 +22,5 @@ After installation, log out and log back in to execute the 42-move_cache.sh scri
 
 The cache directories listed in the script will be moved to the goinfre directory specified during installation.
 
-Example
-bash
-Copy code
-./install.sh --classter mac
 ```
 
